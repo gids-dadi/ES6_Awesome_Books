@@ -38,7 +38,7 @@ a {
 }
 
 .nav_links li:not(:last-child) {
-  content: "";
+  content: '';
   border-right: 1px solid rgba(51, 51, 51, 0.48);
   padding-right: 16px;
 }
