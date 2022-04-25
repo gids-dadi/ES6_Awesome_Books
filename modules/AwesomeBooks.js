@@ -1,12 +1,12 @@
-import Book from "./book.js";
+import Book from './book.js';
 
 class AwesomeBooks {
-  constructor (){
+  constructor () {
     this.books = [];
   }
 
-forBook(title,author) {
-   const id = this.books.length + 1;
+ forBook(title,author) {
+    const id = this.books.length + 1;
     const book = new Book(title, author, id);
     this.books.push(book);
     this.#save();

@@ -79,5 +79,4 @@ contact_link.addEventListener('click', () => {
 });
 
 const luxon_time = document.querySelector('#date');
-
 luxon_time.innerHTML = DateTime.now().toLocaleString();
