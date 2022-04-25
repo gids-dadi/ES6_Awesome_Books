@@ -21,8 +21,7 @@ const renderBooklist = () => {
                 <p class="title">"${book.title}" by ${book.author}</p>
             </div>
             <button data-id=${book.id} class="remove">Remove</button>
-        </article>;`
-    )
+        </article>;`)
     .join('');
 };
 
