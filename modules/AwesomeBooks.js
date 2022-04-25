@@ -6,24 +6,24 @@ class AwesomeBooks {
   }
 
  forBook(title,author) {
-    const id = this.books.length + 1;
-    const book = new Book(title, author, id);
-    this.books.push(book);
-    this.#save();
+  const id = this.books.length + 1;
+   const book = new Book(title, author, id);
+   this.books.push(book);
+   this.#save();
 }
 
  #ForBooks(books) {
     books.forEach((book) => {
-      this.forBook(book.title, book.author);
+    this.forBook(book.title, book.author);
     });
   }
 
   getBooks() {
-    return this.books;
+  return this.books;
   }
 
-    #save() {
-    localStorage.setItem('books', JSON.stringify(this.books));
+#save() {
+  localStorage.setItem('books', JSON.stringify(this.books));
   }
 
     load() {
@@ -33,7 +33,7 @@ class AwesomeBooks {
     }
   }
 
-    deleteBook(id) {
+  deleteBook(id) {
     this.books = this.books.filter((book) => book.id !== id);
     this.#save();
   }
