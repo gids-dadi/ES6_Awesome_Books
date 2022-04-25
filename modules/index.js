@@ -1,19 +1,19 @@
 import AwesomeBooks from './AwesomeBooks.js'
 import { DateTime } from "./luxon.js";
 
-const awesomeBooks = new AwesomeBooks();
+const awesomeBooks = new AwesomeBooks ();
 awesomeBooks.load();
 if(awesomeBooks.getBooks().length < 1) {
 awesomeBooks.forBook('The Decline and Fall of the Roman Empire', 'Edward Gibbon	');
-awesomeBooks.forBook('Far from the Madding Crowd', 'Thomas Hardy');
-awesomeBooks.forBook('	Alice in Wonderland', 'Lewis Carrol');
-awesomeBooks.forBook('A Dangerous place', 'D.P. Moynihan');
+ awesomeBooks.forBook('Far from the Madding Crowd', 'Thomas Hardy');
+ awesomeBooks.forBook('	Alice in Wonderland', 'Lewis Carrol');
+ awesomeBooks.forBook('A Dangerous place', 'D.P. Moynihan');
 }
 
-let bookLlist = document.querySelector('#bookList')
+let bookList = document.querySelector('#bookList')
 
 const renderBooklist =() => {
-  bookLlist.innerHTML = awesomeBooks.getBooks().map((book, index) => `
+  bookList.innerHTML = awesomeBooks.getBooks().map((book, index) => `
   <article class="book ${index % 2 === 0 ? 'dark' : ''}">
             <div>
                 <p class="title">"${book.title}" by ${book.author}</p>
@@ -34,7 +34,7 @@ addBookForm.addEventListener('submit', function (event) {
   renderBooklist();
 });
 
-bookList.addEventListener('click', (event) => {
+ bookList.addEventListener('click', (event) => {
   if (event.target.classList.contains('remove')) {
     const { id } = event.target.dataset;
     awesomeBooks.deleteBook(+id);
