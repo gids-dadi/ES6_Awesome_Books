@@ -5,7 +5,7 @@ Awesome Book Project using ES6 Syntax - A list of books project
 
 ## Built With
 
-- HTML and Javascript
+- HTML, CSS and Javascript
 
 
 ## Getting Started

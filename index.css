@@ -8,8 +8,6 @@
 body {
   text-align: center;
   font-family: 'Patrick Hand', sans-serif;
- 
-  
 }
 
 header {
@@ -123,7 +121,6 @@ form button {
   padding: 10px;
   margin-right: -9px;
 }
-
 
 .hidden {
   display: none;
