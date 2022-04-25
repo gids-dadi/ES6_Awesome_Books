@@ -4,10 +4,6 @@ import { DateTime } from '../luxon.js';
 const awesomeBooks = new AwesomeBooks();
 awesomeBooks.load();
 if (awesomeBooks.getBooks().length < 1) {
-  awesomeBooks.forBook(
-    'The Decline and Fall of the Roman Empire',
-    'Edward Gibbon'
-  );
   awesomeBooks.forBook('Far from the Madding Crowd', 'Thomas Hardy');
   awesomeBooks.forBook('Alice in Wonderland', 'Lewis Carrol');
   awesomeBooks.forBook('A Dangerous place', 'D.P. Moynihan');
@@ -85,5 +81,5 @@ contactLink.addEventListener('click', () => {
   newSection.classList.add('hidden');
 });
 
-const luxon_time = document.querySelector('#date');
-luxon_time.innerHTML = DateTime.now().toLocaleString();
+const luxonTime = document.querySelector('#date');
+luxonTime.innerHTML = DateTime.now().toLocaleString();
