@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Awesome Book ES6 Syntax</title>
+  </head>
+  <body>
+    <header>
+          <h2>Awesome Books</h2>
+            <nav>
+                <ul class="nav_links">
+                    <li id="list" class="active"><a href="#">List</a></li>
+                      <li id="add"><a href="#">Add new</a></li>
+                        <li id="contact" ><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+
+      <section id="date">
+        </section>
+
+ <section id="book-list">
+<h1>Awesome Books</h1>
+  <div  id="bookList"  class="books"> </div>
+     </section>
+
+     <section id="contact-section" class="hidden">
+      <h2>Contact Information</h2>
+      <p>Do you have any questions, or you just want to say "Hello"? </p>
+    <p>You can reach out to us!</p>
+    <ul>
+        <li>Our e-mail: <a href="gideons564@gmail.com">gideons564@gmail.com</a></li>
+        <li>Our phone number: +1-123-456-7890</li>
+        <li>Our address: 123 Main Street, Anytown, CA 12345</li>
+    </ul>
+     </section>
+
+      <section id="new-book" class="hidden">
+        <form id="bookEntry">
+          <input id="bookTitle" type="text" placeholder="Title" />
+          <br />
+          <br />
+          <input id="bookAuthor" type="text" placeholder="Author" />
+          <br />
+          <br />
+          <button type="submit" id="btnAdd">Add Book</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>Copyright &copy; 2022 Awesome Books</p>
+      </footer>
+
+    </main>
+
+    <script type="module" src="modules/index.js"></script>
+  </body>
+</html>
