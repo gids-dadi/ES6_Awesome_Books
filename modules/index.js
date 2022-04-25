@@ -6,14 +6,14 @@ awesomeBooks.load();
 if (awesomeBooks.getBooks().length < 1) {
   awesomeBooks.forBook(
     'The Decline and Fall of the Roman Empire',
-    'Edward Gibbon	'
+    'Edward Gibbon'
   );
   awesomeBooks.forBook('Far from the Madding Crowd', 'Thomas Hardy');
-  awesomeBooks.forBook('	Alice in Wonderland', 'Lewis Carrol');
+  awesomeBooks.forBook('Alice in Wonderland', 'Lewis Carrol');
   awesomeBooks.forBook('A Dangerous place', 'D.P. Moynihan');
 }
 
-let bookList = document.querySelector('#bookList');
+const bookList = document.querySelector('#bookList');
 
 const renderBooklist = () => {
   bookList.innerHTML = awesomeBooks
@@ -25,7 +25,7 @@ const renderBooklist = () => {
                 <p class="title">"${book.title}" by ${book.author}</p>
             </div>
             <button data-id=${book.id} class="remove">Remove</button>
-        </article>`
+        </article>;`
     )
     .join('');
 };
@@ -50,36 +50,36 @@ bookList.addEventListener('click', (event) => {
   }
 });
 
-const list_link = document.querySelector('#list');
-const new_link = document.querySelector('#add');
-const contact_link = document.querySelector('#contact');
+const listLink = document.querySelector('#list');
+const newLink = document.querySelector('#add');
+const contactLink = document.querySelector('#contact');
 
 const listSection = document.querySelector('#book-list');
 const contactSection = document.querySelector('#contact-section');
 const newSection = document.querySelector('#new-book');
 
-list_link.addEventListener('click', () => {
-  list_link.classList.add('active');
-  new_link.classList.remove('active');
-  contact_link.classList.remove('active');
+listLink.addEventListener('click', () => {
+  listLink.classList.add('active');
+  newLink.classList.remove('active');
+  contactLink.classList.remove('active');
   listSection.classList.remove('hidden');
   contactSection.classList.add('hidden');
   newSection.classList.add('hidden');
 });
 
-new_link.addEventListener('click', () => {
-  list_link.classList.remove('active');
-  new_link.classList.add('active');
-  contact_link.classList.remove('active');
+newLink.addEventListener('click', () => {
+  listLink.classList.remove('active');
+  newLink.classList.add('active');
+  contactLink.classList.remove('active');
   listSection.classList.remove('hidden');
   contactSection.classList.add('hidden');
   newSection.classList.remove('hidden');
 });
 
-contact_link.addEventListener('click', () => {
-  list_link.classList.remove('active');
-  new_link.classList.remove('active');
-  contact_link.classList.add('active');
+contactLink.addEventListener('click', () => {
+  listLink.classList.remove('active');
+  newLink.classList.remove('active');
+  contactLink.classList.add('active');
   listSection.classList.add('hidden');
   contactSection.classList.remove('hidden');
   newSection.classList.add('hidden');
