@@ -38,7 +38,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone who helped us.
+- Hat tip to anyone who helped me especially Microverse code reviews for effort at making me a better programmer.
 
 ## 📝 License
 
