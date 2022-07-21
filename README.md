@@ -24,6 +24,8 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 
 Double click on the file index.html
 
+## [Live Demo](https://gids-dadi.github.io/ES6_Awesome_Books/)
+
 ## Authors
 
 👤 Gideon Dadi 
